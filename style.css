@@ -3,9 +3,6 @@
 *::before{
     box-sizing: border-box;
 }
-body{
-    margin: 0px;
-}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 :root{
     --ff: "Roboto", sans-serif;
@@ -13,5 +10,30 @@ body{
     --colorsecondary: #272727;
     --coloraccent: #4169E1;
     --h1: bold 28px/36px var(--ff); 
-    --h2: bold 24px/28px var(--ff);
+    --links-and-text: bold 24px/28px var(--ff);
+}
+body{
+    margin: 0px;
+    background-color: var(--colorprimary);
+    color: var(--colorsecondary);
+}
+header{
+    background-color: var(--coloraccent);
+}
+h1{
+    margin: 0;
+    color: var(--colorprimary);
+}
+a{
+    text-decoration: none;   
+}
+li a{
+    color: var(--colorsecondary);
+}
+ul{
+    list-style: none;
+}
+.movie-cover a{
+    color: var(--colorprimary);
+    background-color: var(--colorsecondary);
 }
