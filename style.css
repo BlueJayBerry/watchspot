@@ -19,21 +19,43 @@ body{
 }
 header{
     background-color: var(--coloraccent);
+    display: flex;
+}
+input{
+    font: var(--links-and-text);
+    flex: 1;
 }
 h1{
     margin: 0;
     color: var(--colorprimary);
+    font: var(--h1);
+    flex: 3;
 }
 a{
     text-decoration: none;   
+    font: var(--links-and-text);
+}
+ul{
+    padding:0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
 }
 li a{
     color: var(--colorsecondary);
 }
-ul{
-    list-style: none;
+main{
+    display: flex;
+    gap: 20px;
+}
+.movie-cover{
+    flex: 1;
 }
 .movie-cover a{
     color: var(--colorprimary);
     background-color: var(--colorsecondary);
+    padding: 20px 40px;
+}
+img{
+    width:100%;
 }
