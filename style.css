@@ -13,13 +13,16 @@
     --links-and-text: bold 24px/28px var(--ff);
 }
 body{
-    margin: 0px;
+    margin: 0;
     background-color: var(--colorprimary);
     color: var(--colorsecondary);
 }
 header{
+    max-width: 1280px;
     background-color: var(--coloraccent);
     display: flex;
+    margin: 10px auto;
+    padding: 10px;
 }
 input{
     font: var(--links-and-text);
@@ -36,20 +39,27 @@ a{
     font: var(--links-and-text);
 }
 ul{
+    max-width: 1280px;
     padding:0;
     list-style: none;
     display: flex;
     gap: 10px;
+    margin: 20px auto;
+    padding: 10px;
 }
 li a{
     color: var(--colorsecondary);
 }
 main{
+    max-width: 1280px;
     display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
     gap: 20px;
+    margin: 30px auto;
 }
 .movie-cover{
-    flex: 1;
+    flex: 1 0 13%;
 }
 .movie-cover a{
     color: var(--colorprimary);
